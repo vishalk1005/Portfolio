@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal K - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-top: 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: #333;
+            color: white;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header img {
+                width: 120px;
+            }
+
+            .project {
+                margin-bottom: 15px;
+            }
+
+            .project h3 {
+                font-size: 1.5em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vishal K</h1>
+        <p>Web Developer | Programmer</p>
+        <img src="your-image-url.jpg" alt="Vishal K" width="150">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer who loves creating dynamic websites and applications. With a strong foundation in HTML, CSS, JavaScript, and frameworks like React and Node.js, I aim to bring innovative ideas to life on the web.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1 - Portfolio Website</h3>
+        </div>
+        <div class="project">
+            <h3>Project 2 - Railway Track crack detection system</h3>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email:</p>
+        <p>Email: <a href="mailto:ksvishal2005@gmail.com">ksvishal2005@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vishal K. All rights reserved. <a href="https://github.com/vishalk" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/vishalk" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        // Smooth Scroll Functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
